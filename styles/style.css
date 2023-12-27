@@ -165,10 +165,18 @@ button {
   color: var(--white);
 }
 
-.right-section img {
-  width: 220%;
-  height: 80%;
+.right-section {
+  flex-basis: 40%;
+  text-align: center;
 }
+
+.right-section img {
+  max-width: 120%;
+  height: auto;
+  width: 130%;
+  margin-bottom: 3rem;
+}
+
 /* End of Hero Styling */
 
 /* Appointment Booking Styling */
@@ -210,7 +218,7 @@ label {
 
 input[type="text"],
 input[type="date"],
-input[type="time"], 
+input[type="time"],
 select {
   padding: 10px;
   border-radius: 5px;
@@ -257,7 +265,7 @@ select {
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  width: 60%;
+  width: 80%;
   margin: auto;
   padding: 2rem;
   border: none;
@@ -294,6 +302,7 @@ select {
   margin-right: auto;
   margin-bottom: 1.5rem;
 }
+
 /* End of Styling */
 
 /* Customer Review Styling */
@@ -349,6 +358,7 @@ select {
   justify-content: center;
   padding-top: 1rem;
 }
+
 /* End of Customer Review */
 
 /* Newsletter Styling */
@@ -402,6 +412,7 @@ select {
   color: var(--white);
   border-radius: 0.4rem;
 }
+
 /* End of Newsletter Styling */
 
 /* Bcak to top Styling */
@@ -510,6 +521,17 @@ footer {
 }
 
 /* Media Query */
+@media screen and (max-width: 1024px) {
+  .right-section img {
+    max-width: 120%;
+    width: 110%;
+  }
+
+  .right-section {
+    flex-basis: auto;
+  }
+}
+
 @media (min-width: 992px) {
   form {
     grid-template-columns: repeat(4, 1fr);
